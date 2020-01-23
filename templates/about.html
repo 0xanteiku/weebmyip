@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="about">
+      <div class="about-devs">
+        <div class="about-person">
+          <img src="{{ url_for('static', filename='img/0xCN.jpg') }}" alt="anime girl going woah">
+          <h2>Cup Noodles</h2>
+          <p>NoodleBoi - UltraCoder - PwnXprt<br><br>Crazy closet weeb that is a master of all sorts of computer things and tends to never give up onces he gets started. Has a weird habbit of only eating noodles too...<br><br>Fav Anime - HxH 2011<br><br>Github - <a href="https://github.com/0xCN">0xCN</a></p>
+        </div>
+        <div class="about-person">
+          <img src="{{ url_for('static', filename='img/luxunator.jpeg') }}" alt="anime girl smiling">
+          <h2>Luxunator</h2>
+          <p>WebSlayer - PyFreak - SQLInjctr<br><br>A totally awesome nerd that spends most of his time programming, hacking, and watching anime. He always is willing to teach and comes up with alot of new wacky ideas.<br><br>Fav Anime - Tokyo Ghoul<br><br>Github - <a href="https://github.com/luxunator">luxunator</a></p>
+        </div>
+      </div>
+      <div class="project-wrap">
+        <div class="about-project">
+          <img src="{{ url_for('static', filename='img/huh.png') }}" alt="anime girl peeking">
+            <p>NANI!? You want to hear a cute smol anime girl read your IP address? IDK man that's pretty weird but here you go, You can now use our web API to get what you weebs want!<br><br><a href="https://github.com/luxunator/weebmyip">Source Code</a></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let mainNav = document.getElementById('menu');
+      let navBarToggle = document.getElementById('js-nav-toggle');
+
+      navBarToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('activate');
+      });
+    </script>
+{% endblock %}

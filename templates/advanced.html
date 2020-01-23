@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div class="ip-search">
+      <form action="{{ url_for('advanced_post') }}" method="POST">
+        <h1>IP Address: {{data.self_ip}}</h1>
+        <div class="form-inputs">
+          <input class="adv-input" type="text" name="ip" placeholder="8.8.8.8" onfocus="this.placeholder=''"  onblur="this.placeholder='8.8.8.8'">
+          <div>
+            <audio id="audio" src="{{data.audio}}"></audio>
+            <input class="form-button" type="image" src="{{ url_for('static', filename='img/select.svg') }}" alt="Submit">
+            <img class="form-button" src="{{ url_for('static', filename='img/volume.svg') }}" alt="Play Sound" onclick="play();">
+          </div>
+        </div>
+      </form>
+      {% if data.error %}<p class="error">{{data.error}}<img class="emote" src="/static/emotes/{{data.emote}}"></p>{% endif %}
+    </div>
+    <div class="info-container">
+      <div class="ip-info">
+        <img class="girl-here" src="{{ url_for('static', filename='img/here.png') }}" alt="girl saying here you go">
+        <table class="info-tbl">
+          <tr>
+            <td class="info-name">IP Address</td>
+            <td class="info-data">{{data.IP}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">ISP</td>
+            <td class="info-data">{{data.ISP}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">ASN Code</td>
+            <td class="info-data">{{data.ASN}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">Country</td>
+            <td class="info-data">{{data.country_name}} - {{data.country_iso_code}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">Region</td>
+            <td class="info-data">{{data.subdiv}} - {{data.subdiv_iso_code}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">City</td>
+            <td class="info-data">{{data.city}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">Postal Code</td>
+            <td class="info-data">{{data.postal_code}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">Lat/Long</td>
+            <td class="info-data">{{data.latitude}}, {{data.longitude}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">Proxy-Type</td>
+            <td class="info-data">{{data.proxy_type}}</td>
+          </tr>
+          <tr>
+            <td class="info-name">Audio</td>
+            <td class="info-data"><a href="{{data.audio}}" style="color: #C0D6E4;">{{data.audio}}</a></td>
+          </tr>
+          <tr>
+            <td class="info-name">User-Agent</td>
+            <td class="info-data">{{data.user_agent}}</td>
+          </tr>
+        </table>
+        <div class="mapouter">
+          <h2>Location Map:</h2>
+          <iframe src="https://maps.google.com/maps?q={{data.latitude}}%2C%20{{data.longitude}}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+    <script>
+      let mainNav = document.getElementById('menu');
+      let navBarToggle = document.getElementById('js-nav-toggle');
+
+      navBarToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('activate');
+      });
+    </script>
+{% endblock %}

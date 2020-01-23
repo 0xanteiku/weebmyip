@@ -1,0 +1,10 @@
+certifi
+chardet
+geoip2
+idna
+IP2Proxy
+maxminddb
+requests
+urllib3
+flask
+py-radix

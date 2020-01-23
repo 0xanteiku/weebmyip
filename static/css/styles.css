@@ -1,0 +1,439 @@
+/* --- Starting Configuration Start--- */
+* {
+    margin: 0;
+}
+
+body, html {
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;   
+}
+
+body {
+    background-color: #212121;
+    font-family: Roboto, sans-serif;
+}
+/* --- Starting Configuration End--- */
+
+/* --- Colors Start --- */
+.pink-border {
+    border: 2px solid #EE006C;
+}
+
+.purple-border {
+    border: 2px solid #814ED2;
+}
+
+.light-pink {
+    color: #EEA5F6;
+}
+
+.dark-pink {
+    color: #EA1FA5;
+}
+
+.purple {
+    color: #DF42D1;
+}
+/* --- Colors End --- */
+
+/* --- Navbar Start --- */
+.nav-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+}
+
+.nav-toggle img {
+    width: 30px;    
+}
+
+.activate {
+    display: block;
+}
+
+header {
+    background: #2B2B2B;
+    color: #fff;
+}
+
+header nav ul {
+    padding: 40px 0 0 0;
+    list-style-type: none;
+    display: none;
+}
+
+header nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul li:hover {
+    background: #303030;
+}
+/* --- Navbar End --- */
+
+/* --- Basic Page Start --- */
+.logo {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+    height: 85px;
+}
+
+.main-input {
+    text-align: center;
+    margin-top: 3vh;
+}
+.error{
+    color: #fff;
+    max-width: 350px;
+    margin: 20px 25px 0px 25px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 5px 20px;
+    display: inline-block;
+}
+.emote {
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.basic-input {
+    width: 80%;
+    height: 15vw;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10vw;
+    font-family: inherit;
+    margin: 0px 10%;
+}
+
+.form-button {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-top: 3vh;
+}
+
+.play-ip {
+    text-align: center;
+    margin-top: 7.5vh;
+}
+
+.play-ip img {
+    width: 75%;
+    height: 50%;
+    max-width: 300px;
+}
+/* --- Basic Page End --- */
+
+/* --- Advanced Page Start --- */
+.ip-search {
+    margin-top: 7.5vh;
+    text-align: center;
+}
+
+.ip-search h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;   
+}
+
+.ip-search .form-button {
+    margin: 10px 10px;
+}
+
+.adv-input {
+    width: 80%;
+    max-width: 800px;
+    height: 15vw;
+    height: 120px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10vw;
+    font-family: inherit;
+    margin: 0px 10%;
+}
+
+.ip-info {
+    border-radius: 50px;
+    background-color: #2B2B2B;
+    text-align: center;
+    margin: 5vh 5%;
+}
+
+.girl-here {
+    margin: 30px 0px;
+    width: 200px;
+}
+
+.info-tbl {
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.info-tbl td {
+    text-align: left;
+    width: 50%;
+    padding: 15px 0px;
+    border-bottom: 2px solid #212121;
+}
+
+.info-name {
+    color: #EEA5F6;
+}
+
+.info-data {
+    color: #fff;
+}
+
+.mapouter h2 {
+    margin: 25px 0px;
+    color: #fff;
+}
+
+.mapouter iframe {
+    margin: auto;
+    padding-bottom: 50px;
+    width: 80%;
+    height: 400px;
+}
+/* --- Advanced Page End --- */
+
+/* --- API Page Start --- */
+.api-header {
+    text-align: center;
+    width: 90%;
+    margin: 50px auto;
+    color: #fff;
+}
+
+.api-header h1 {
+    margin-bottom: 20px;
+}
+
+.api-body {
+    color: #fff;
+    width: 90%;
+    margin: auto;
+}
+
+.api-console {
+    background-color: #2B2B2B;
+    margin: 40px auto;
+    padding: 30px 5%;
+    border-radius: 50px;
+    font-size: 15px;
+}
+/* --- API Page End --- */
+
+/* --- About Page Start --- */
+.about {
+    margin-top: 5vh;
+}
+
+.about a {
+    color: #ffc0cb;
+}
+
+.about-devs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    color: #fff;
+}
+
+.about-devs h2 {
+    margin: 20px 0px;
+}
+
+.about-devs img {
+    width: 100px;
+    border-radius: 25px;
+}
+
+.about-person {
+    background-color: #2B2B2B; 
+    max-width: 400px;
+    margin: 5vh 5%;
+    text-align: center;
+    padding: 30px 0px;
+    border: 2px solid #EE006C;
+    border-radius: 50px;
+}
+
+.about-person p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.about-project {
+    max-width: 806px;
+    display: flex;
+    color: #fff;
+    border: solid 2px #814ED2;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 20px 10%;
+    flex-wrap: wrap;
+}
+
+.about-project img {
+    width: 125px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.about-project p {
+    text-align: center;
+}
+
+.project-wrap {
+    padding: 0px 5%;
+}
+/* --- About Page End --- */
+
+/* Styles for browsers larger than 800px; */
+@media only screen and (min-width: 800px) {
+   
+  /* --- 800px Navbar Start --- */ 
+  .nav-toggle {
+      display: none;
+  }
+    
+  header {
+      background: #212121;
+  }
+    
+  header nav ul {
+      margin-top: 4vh;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+  }
+    
+  header nav ul li {
+      max-width: 80px;
+      background: #2B2B2B;
+      text-align: center;
+      padding: 10px 40px;
+      border-radius: 500px;
+      color: #ffffff;
+      margin-left: 30px;
+      display: inline-block;
+    
+  }
+    
+  .active {
+      border: 1.5px solid #EA1FA5;
+  }
+  /* --- 800px Navbar End --- */
+
+  /* --- 800px Basic Page Start --- */
+  .logo {
+      margin-top: 5vw;
+  }
+    
+  .logo img {
+      width: 400px;
+      height: 125px;
+  }
+    
+  .basic-input {
+      max-width: 800px;
+      height: 120px;
+      font-size: 76px;
+      margin: 0px 12.5px 0px 75px;
+  }
+    
+  .form-button {
+      width: 50px;
+      height: 50px;
+      margin-right: 12.5px;
+  }
+    
+  .play-ip img {
+      width: 400px;
+  }
+  /* --- 800px Basic Page End --- */
+
+  /* --- 800px Advanced Page Start --- */  
+  .adv-input { 
+      font-size: 76px;
+  }
+    
+  .info-container {
+      margin: 0px 40px;
+  }
+    
+  .ip-info {
+      max-width: 1000px;
+      margin: 75px auto;
+  }
+    
+  .info-tbl {
+      font-size: 18px;
+  }
+  /* --- 800px Advanced Page End --- */
+    
+  /* --- 800px API Page Start --- */  
+  .api-header {
+      max-width: 700px;
+  }
+    
+  .api-body {
+      max-width: 800px;
+  }
+    
+  .api-console {
+      max-width: 650px;
+      font-size: 18px;
+  }
+  /* --- 800px API Page End --- */
+    
+  /* --- 800px About Page Start --- */
+  .about-person {
+      margin: 5vh 40px;
+  }
+    
+  .about-project {
+      padding: 20px 40px;
+  }
+  /* --- 800px About Page End --- */
+    
+}
+
+/* Styles for browsers larger than 1100px; */
+@media only screen and (min-width: 1100px){
+    
+  /* --- 1100px Advanced Page Start --- */
+  .adv-input {
+      margin: 0px 0px 0px 150px;    
+  }
+  /* --- 1100px Advanced Page End --- */
+    
+}
