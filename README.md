@@ -24,7 +24,9 @@
 
 ### API
 <h4>curl usage:</h4>
+
 ```
+
 curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
 
 {
@@ -46,7 +48,9 @@ curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
 ```
 
 <h4>multiple values:</h4>
+
 ```
+
 curl https://[domain]/api/v1?ip=8.8.8.8&data=audio,isp,asn"
 
 {
