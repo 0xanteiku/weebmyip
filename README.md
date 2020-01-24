@@ -1,6 +1,6 @@
 <h4 align="center">
   <br>
-  <a href="https://github.com/luxunator/weebmyip"><img src="https://i.ibb.co/vcSzLbq/weebmyip.png" alt="logo"></a>
+  <a href="https://github.com/luxunator/weebmyip"><img src="https://i.ibb.co/vcSzLbq/weebmyip.png" alt="logo"></a><br>
 flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it
 </h4>
 <p align="center">
