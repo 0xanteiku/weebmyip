@@ -4,49 +4,44 @@
     <div class="api">
       <div class="api-header">
         <h1>API for IP Information and Geolocation</h1>
-          <p>With this API you will be aple to get information about an IP address such as ISP, Geolocation, and much more. Our outputs are all either in json or plaintext. We also provide you with an audio file for the IP!<br><strong>Note: each audio file gets deleted after 100s</strong></p>
+          <p>With this API you will be able to get information about an IP address such as ISP, Geolocation, and much more. Our outputs are all either in json or plaintext. We also provide you with an audio file for the IP!<br><br><strong>Note: each audio file gets deleted after 100s</strong></p>
       </div>
       <div class="api-body">
         <h2>Curl JSON Usage:</h2>
         <div class="api-console pink-border">
-          <p>curl <span class="dark-pink">https://weebmyip.com/8.8.8.8</span><br><br>
+          <p>curl <span class="dark-pink">https://[domain]/api/v1?ip=8.8.8.8&data=all</span><br><br>
             {<br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"ip"</span> : <span class="light-pink">"8.8.8.8"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"city"</span> : <span class="light-pink">"Mountain View"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"region"</span> : <span class="light-pink">"California"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"region_code"</span> : <span class="light-pink">"CA"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"country"</span> : <span class="light-pink">"US"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"status"</span> : <span class="light-pink">"true"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"IP"</span> : <span class="light-pink">"8.8.8.8"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"audio"</span> : <span class="light-pink">"/static/generated/8-8-8-8.mp3"</span><br>
             <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"country_name"</span> : <span class="light-pink">"United States"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"continent_code"</span> : <span class="light-pink">"NA"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"in_eu"</span> : <span class="light-pink">false</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"postal"</span> : <span class="light-pink">"94035"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"country_iso_code"</span> : <span class="light-pink">"US"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"subdiv"</span> : <span class="light-pink">"California"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"subdiv_iso_code"</span> : <span class="light-pink">"CA"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"city"</span> : <span class="light-pink">"Mountain View"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"postal_code"</span> : <span class="light-pink">"94035"</span><br>
             <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"latitude"</span> : <span class="light-pink">37.386</span><br>
             <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"longitude"</span> : <span class="light-pink">-122.0838</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"timezone"</span> : <span class="light-pink">"America/Los_Angeles"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"utc_offset"</span> : <span class="light-pink">"-0800"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"country_calling_code"</span> : <span class="light-pink">"+1"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"currency"</span> : <span class="light-pink">"USD"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"languages"</span> : <span class="light-pink">"en-US,es-US,haw"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"asn"</span> : <span class="light-pink">AS15169</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"org"</span> : <span class="light-pink">"Google LLC"</span><br>
-            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"audio_file"</span> : <span class="light-pink">"https://weebmyip.com/8.8.8.8/audio.mp3"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"isp"</span> : <span class="light-pink">"GOOGLE - Google LLC, US"</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"asn"</span> : <span class="light-pink">15169</span><br>
+            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;"proxy_type"</span> : <span class="light-pink">"DCH"</span><br>
             }
           </p>
         </div>
         <h2>Curl Single Usage:</h2>
         <div class="api-console purple-border">
           <p>
-            curl <span class="dark-pink">https://weebmyip.com/8.8.8.8/country</span><br><br>
+            curl <span class="dark-pink">https://[domain]/api/v1?ip=8.8.8.8&data=country_iso_code</span><br><br>
             <span class="light-pink">&nbsp;&nbsp;&nbsp;&nbsp;US</span><br><br>
-            curl <span class="dark-pink">https://weebmyip.com/8.8.8.8/region</span><br><br>
-            <span class="light-pink">&nbsp;&nbsp;&nbsp;&nbsp;California</span>
+            curl <span class="dark-pink">https://[domain]/api/v1?ip=8.8.8.8&data=asn</span><br><br>
+            <span class="light-pink">&nbsp;&nbsp;&nbsp;&nbsp;15169</span>
           </p>
         </div>
         <h2>Getting Audio File</h2>
         <div class="api-console pink-border">
           <p>
-            wget <span class="dark-pink">https://weebmyip.com/8.8.8.8/audio.mp3</span>
-            <span class="light-pink"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Saving to: ‘audio.mp3’<br>&nbsp;&nbsp;&nbsp;&nbsp;audio.mp3 100%[===================>]<br>&nbsp;&nbsp;&nbsp;&nbsp;(4.17 MB/s) - ‘audio.mp3’ saved</span>
+            wget <span class="dark-pink">https://[domain]/static/generated/8-8-8-8.mp3</span>
+            <span class="light-pink"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Saving to: ‘8-8-8-8.mp3’<br>&nbsp;&nbsp;&nbsp;&nbsp;8-8-8-8.mp3 100%[===================>]<br>&nbsp;&nbsp;&nbsp;&nbsp;(4.17 MB/s) - ‘8-8-8-8.mp3’ saved</span>
           </p>
         </div>
       </div>
