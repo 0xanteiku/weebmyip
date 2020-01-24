@@ -24,7 +24,8 @@
 
 ### API
 <h4>curl usage:</h4>
-```curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
+```
+curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
 
 {
   "status": "true", 
@@ -41,16 +42,19 @@
   "isp": "GOOGLE - Google LLC, US", 
   "asn": 15169, 
   "proxy_type": "DCH"
-}```
+}
+```
 
 <h4>multiple values:</h4>
-```curl https://[domain]/api/v1?ip=8.8.8.8&data=audio,isp,asn"
+```
+curl https://[domain]/api/v1?ip=8.8.8.8&data=audio,isp,asn"
 
 {
   "audio": "/static/generated/8-8-8-8.mp3", 
   "isp": "GOOGLE - Google LLC, US", 
   "asn": 15169
-}```
+}
+```
 
 
 ### Demo
