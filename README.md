@@ -1,10 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/luxunator/weebmyip"><img src="https://i.ibb.co/vcSzLbq/weebmyip.png" alt="logo"></a>
-  <h4 align="center">flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it</h4>
 </h1>
-<br>
-
 <p align="center">
   <a href="https://github.com/luxunator/weebmyip/releases">
     <img src="https://img.shields.io/github/release/luxunator/weebmyip.svg">
@@ -16,11 +13,17 @@
       <img src="https://img.shields.io/github/stars/luxunator/weebmyip">
   </a>
 </p>
+<h4 align="center">flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it</h4>
 
 ### Features
 - Loli voice
 - Web API
 - Playing Crabrave when you get banned
+
+### Technologies Used
+- [MaxMind](https://dev.maxmind.com/)
+- [IP2Proxy](https://www.ip2location.com)
+- [APNIC](http://thyme.apnic.net/)
 
 ### API
 <h4>curl usage:</h4>
