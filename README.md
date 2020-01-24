@@ -1,6 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/luxunator/weebmyip"><img src="https://i.ibb.co/vcSzLbq/weebmyip.png" alt="logo"></a>
+<h5 align="center">flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it</h5>
 </h1>
 <p align="center">
   <a href="https://github.com/luxunator/weebmyip/releases">
@@ -13,7 +14,6 @@
       <img src="https://img.shields.io/github/stars/luxunator/weebmyip">
   </a>
 </p>
-<h4 align="center">flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it</h4>
 
 ### Features
 - Loli voice
