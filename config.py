@@ -1,8 +1,8 @@
 # install custom_ DB
 custom_db = True
 # custom_ directory
-db_dir = "/home/zee/Desktop/iot/weebmyip/DB/tmp/"
-home_dir = "/home/zee/Desktop/iot/weebmyip/"
+db_dir = "/home/weebmyip/DB/tmp/"
+home_dir = "/home/weebmyip/"
 # num of allowed requests before they get banned
 allowed_requests = 9
 # num of seconds to sleep before clearing the bans
