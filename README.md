@@ -1,9 +1,9 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/luxunator/weebmyip"><img src="https://i.ibb.co/vcSzLbq/weebmyip.png" alt="logo"></a>
+  <h4 align="center">flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it</h4>
 </h1>
 <br>
-<h4 align="center">flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it</h4>
 
 <p align="center">
   <a href="https://github.com/luxunator/weebmyip/releases">
@@ -25,8 +25,7 @@
 ### API
 <h4>curl usage:</h4>
 
-```
-
+``` 
 curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
 
 {
@@ -49,8 +48,7 @@ curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
 
 <h4>multiple values:</h4>
 
-```
-
+``` 
 curl https://[domain]/api/v1?ip=8.8.8.8&data=audio,isp,asn"
 
 {
