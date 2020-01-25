@@ -1,13 +1,12 @@
-# install custom_ DB
-custom_db = True
-# custom_ directory
-db_dir = "/home/weebmyip/DB/tmp/"
-home_dir = "/home/weebmyip/"
-# num of allowed requests before they get banned
+# Database Directory (change to set custom directory)
+import os
+db_dir = f"{os.getcwd()}/DB/tmp/"
+home_dir = f"{os.getcwd()}/"
+# Number of allowed requests before ban
 allowed_requests = 9
-# num of seconds to sleep before clearing the bans
+# Number of seconds until ban is removed
 clear_ban = 60
-# num of seconds to sleep before deleting the generated mp3 files
+# Number of seconds mp3 files will be hosted
 del_ipfiles = 100
-# cute emotes
+# Emotes for input errors
 error_emotes = {'database': 'database.png', 'cooldown': 'cooldown.png', 'invalid': 'invalid.png'}
