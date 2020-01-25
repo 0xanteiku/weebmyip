@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-<!---    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> --->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/roboto.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 	<script src="{{ url_for('static', filename='js/audio.js') }}"></script>
-	{% if data.title %}
-		<title>WeebMyIP - {{data.title}}</title>
-	{% else %}
-		<title>WeebMyIP</title>
-	{% endif %}
+	{% if data.title %}<title>WeebMyIP - {{data.title}}</title>{% else %}<title>WeebMyIP</title>{% endif %}
   </head>
   <body>
     <header>
       <nav>
         <span class="nav-toggle" id="js-nav-toggle">
-            <img src="{{ url_for('static', filename='img/burger.png') }}" alt="burger menu">
+          <img src="{{ url_for('static', filename='img/burger.png') }}" alt="burger menu">
         </span>
         <ul id="menu">
           <a href="{{url_for('home')}}"><li {% if data.title == "Home" %}class="active"{% endif %}>Basic</li></a>
@@ -25,9 +20,7 @@
           <a href="{{url_for('about')}}"><li {% if data.title == "About" %}class="active"{% endif %}>About</li></a>
         </ul>
       </nav>
-    </header>
-    <header>
-    {% block content %}{% endblock %}
+    </header>{% block content %}{% endblock %}
   </body>
 </html>
 

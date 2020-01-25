@@ -6,14 +6,12 @@
             <img src="{{ url_for('static', filename='img/weebmyip.png') }}" alt="weebmyip logo">
         </div>
         <div class="main-input">
-        <div style="text-align: center;">
-          <form action="{{ url_for('home_post') }}" method="POST" class="centered">
-            <input class="basic-input centered" type="text" name="ip" placeholder="8.8.8.8" value="{{data.IP}}" onfocus="this.placeholder=''" onblur="this.placeholder='8.8.8.8'">
-            <input class="form-button" type="image" src="{{ url_for('static', filename='img/refresh.svg') }}" alt="Submit">
+          <form action="{{ url_for('home_post') }}" method="POST">
+            <input class="basic-input" type="text" name="ip" placeholder="8.8.8.8" value="{{data.IP}}" onfocus="this.placeholder=''" onblur="this.placeholder='8.8.8.8'">
+            <input class="form-button" type="image" src="{{ url_for('static', filename='img/volume.svg') }}" alt="Submit">
           </form>
           {% if data.error %}<p class="error">{{data.error}}<img class="emote" src="/static/emotes/{{data.emote}}"></p>{% endif %}
 		  <audio id="audio" src="{{data.audio}}"></audio>
-        </div>
     	</div>
         <div class="play-ip">
           <input type="image" src="{{ url_for('static', filename='img/touchme.png') }}" alt="touch me senpai" onclick="random_play();">
@@ -29,6 +27,4 @@
       window.onload=function(){
         document.getElementById("audio").play();
       }
-    </script>
-
-{% endblock %}
+    </script>{% endblock %}
