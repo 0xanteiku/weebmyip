@@ -1,7 +1,7 @@
 <h4 align="center">
   <br>
   <a href="https://github.com/luxunator/weebmyip"><img src="https://i.ibb.co/vcSzLbq/weebmyip.png" alt="logo"></a><br>
-flask app with a rest api to get information on IP addresses, and of course an anime girl to read you it
+Flask webapp with a rest api to get information on IP addresses, and of course an anime girl to read you the IP!
   <br>
 </h4>
 <p align="center">
@@ -19,7 +19,7 @@ flask app with a rest api to get information on IP addresses, and of course an a
 ### Features
 - Loli voice
 - Web API
-- Playing Crabrave when you get banned
+- Crabrave plays when you get banned
 
 ### Technologies Used
 - [MaxMind](https://dev.maxmind.com/)
@@ -27,7 +27,7 @@ flask app with a rest api to get information on IP addresses, and of course an a
 - [APNIC](http://thyme.apnic.net/)
 
 ### API
-<h4>curl usage:</h4>
+<h4>Curl Usage:</h4>
 
 ``` 
 curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
@@ -50,7 +50,7 @@ curl https://[domain]/api/v1?ip=8.8.8.8&data=all"
 }
 ```
 
-<h4>multiple values:</h4>
+<h4>Multiple Value Collection Usage:</h4>
 
 ``` 
 curl https://[domain]/api/v1?ip=8.8.8.8&data=audio,isp,asn"
