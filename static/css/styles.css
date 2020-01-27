@@ -67,6 +67,7 @@ header nav ul {
 header nav ul a {
     color: #fff;
     text-decoration: none;
+    margin-left: 30px;
 }
 
 header nav ul li {
@@ -342,7 +343,6 @@ header nav ul li:hover {
       padding: 10px 40px;
       border-radius: 500px;
       color: #ffffff;
-      margin-left: 30px;
       display: inline-block;
     
   }
