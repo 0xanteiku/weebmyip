@@ -1,5 +1,5 @@
-# Database Directory (change to set custom directory)
 import os
+# Database Directory (change to set custom directory)
 db_dir = f"{os.getcwd()}/DB/tmp/"
 home_dir = f"{os.getcwd()}/"
 # Number of allowed requests before ban
